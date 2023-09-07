@@ -1,21 +1,21 @@
 import java.util.Scanner;
 public class Ex09 {
     public static void main(String[] args) {
-        Scanner ex = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
 
-        System.out.print("Base maior: ");
-        double maior = ex.nextDouble();
+        double maior, menor, altura, area;
 
-        System.out.print("Base menor: ");
-        double menor = ex.nextDouble();
+        System.out.print("Informe a base maior do trapézio: ");
+        maior = entrada.nextDouble();
+        System.out.print("Informe sua base menor: ");
+        menor = entrada.nextDouble();
+        System.out.print("Informe sua altura: ");
+        altura = entrada.nextDouble();
 
-        System.out.print("Altura: ");
-        double altura = ex.nextDouble();
-
-        double area = ((maior + menor) * altura) /2;
+        area = ((maior + menor) * altura) /2;
 
         System.out.print("A área total desse trapézio é: "+ area);
 
-        ex.close();
+        entrada.close();
     }
 }

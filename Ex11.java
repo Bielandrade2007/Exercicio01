@@ -1,18 +1,19 @@
 import java.util.Scanner;
 public class Ex11 {
     public static void main(String[] args) {
-        Scanner ex = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
+
+        double maior, menor, area;
 
         System.out.print("Diagonal maior: ");
-        double maior = ex.nextDouble();
-
+        maior = entrada.nextDouble();
         System.out.print("Diagonal menor: ");
-        double menor = ex.nextDouble();
+        menor = entrada.nextDouble();
 
-        double area = maior * menor /2;
+        area = maior * menor /2;
 
         System.out.println("Area total do losango é: "+ area);
 
-        ex.close();
+        entrada.close();
     }
 }

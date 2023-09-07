@@ -1,18 +1,19 @@
 import java.util.Scanner;
-
 public class Ex05 {
     public static void main(String[] args) {
-        Scanner ex = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
+
+        double valor, desconto, preco;
 
         System.out.println("Insira o valor do produto que receberá o desconto: ");
-        double valor = ex.nextDouble();
+        valor = entrada.nextDouble();
 
-        double desconto = valor * 0.1;
+        desconto = valor * 0.1;
 
-        double preco = valor - desconto;
+        preco = valor - desconto;
 
         System.out.println("O novo valor é: "+ preco);
 
-        ex.close();
+        entrada.close();
     }
 }

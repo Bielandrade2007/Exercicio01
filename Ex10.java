@@ -1,15 +1,17 @@
 import java.util.Scanner;
 public class Ex10 {
     public static void main(String[] args) {
-        Scanner ex = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
 
-        System.out.print("Lado: ");
-        double lado = ex.nextDouble();
+        double lado, area;
 
-        double area = lado * lado;
+        System.out.print("Lado do quadrado: ");
+        lado = entrada.nextDouble();
+
+        area = lado * lado;
 
         System.out.print("A área do quadrado é: "+ area);
 
-        ex.close();
+        entrada.close();
     }
 }

@@ -1,19 +1,16 @@
 import java.util.Scanner;
-
 public class Ex15 {
     public static void main(String[] args) {
-        Scanner ex = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
 
         double salario, boleto1, boleto2, totalBoletos, multa, total;
 
         System.out.print("Informe seu salário total: ");
-        salario = ex.nextDouble();
-
+        salario = entrada.nextDouble();
         System.out.print("Valor do boleto 1: ");
-        boleto1 = ex.nextDouble();
-
+        boleto1 = entrada.nextDouble();
         System.out.print("Valor do boleto 2: ");
-        boleto2 = ex.nextDouble();
+        boleto2 = entrada.nextDouble();
 
         multa = boleto1 * 0.02 + boleto2 * 0.02;
         totalBoletos = boleto1 + boleto2;
@@ -21,6 +18,6 @@ public class Ex15 {
 
         System.out.print("Após pagar as contas, restará "+total+" do salário de João");
 
-        ex.close();
+        entrada.close();
     }
 }

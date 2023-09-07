@@ -1,19 +1,19 @@
 import java.util.Scanner;
-
 public class Ex01 {
     public static void main(String[] args) {
-        Scanner num = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
+
+        double numero1, numero2, resultado;
 
         System.out.print("Digite o primeiro número: ");
-        double numero1 = num.nextDouble();
-
+        numero1 = entrada.nextDouble();
         System.out.print("Digite o segundo número: ");
-        double numero2 = num.nextDouble();
+        numero2 = entrada.nextDouble();
 
-        double resultado = numero1 - numero2;
+        resultado = numero1 - numero2;
 
         System.out.print("Resultado: " + resultado);
 
-        num.close();
+        entrada.close();
     }
 }

@@ -1,20 +1,20 @@
 import java.util.Scanner;
-
 public class Ex20 {
     public static void main(String[] args) {
-        Scanner ex = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
+
+        double angulo, distancia, medidaEscada;
 
         System.out.print("Digite a medida do ângulo em graus: ");
-        double angulo = ex.nextDouble();
-
+        angulo = entrada.nextDouble();
         System.out.print("Digite a distância da escada à parede: ");
-        double distancia = ex.nextDouble();
+        distancia = entrada.nextDouble();
 
-        double medidaEscada = distancia / Math.cos(Math.toRadians(angulo));
+        medidaEscada = distancia / Math.cos(Math.toRadians(angulo));
 
         System.out.println("A medida da escada é: " + medidaEscada);
 
-        ex.close();
+        entrada.close();
     }
 }
 

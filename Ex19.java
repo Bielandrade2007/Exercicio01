@@ -1,23 +1,23 @@
 import java.util.Scanner;
-
 public class Ex19 {
     public static void main(String[] args) {
-        Scanner ex = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
+
+        double largura, comprimento, area, potenciaIluminacao;
 
         System.out.print("Digite a largura do cômodo em metros: ");
-        double largura = ex.nextDouble();
-
+        largura = entrada.nextDouble();
         System.out.print("Digite o comprimento do cômodo em metros: ");
-        double comprimento = ex.nextDouble();
+        comprimento = entrada.nextDouble();
 
-        double area = largura * comprimento;
+        area = largura * comprimento;
 
-        double potenciaIluminacao = area * 18;
+        potenciaIluminacao = area * 18;
 
         System.out.println("Área do cômodo: " + area + " m²");
         System.out.println("Potência de iluminação necessária: " + potenciaIluminacao + " W");
 
-        ex.close();
+        entrada.close();
     }
 }
 

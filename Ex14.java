@@ -1,16 +1,14 @@
 import java.util.Scanner;
-
 public class Ex14 {
     public static void main(String[] args) {
-        Scanner ex = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
 
         int nascimento, ano, idade, meses, dias, semanas;
 
         System.out.print("Insira seu ano de nascimento: ");
-        nascimento = ex.nextInt();
-
+        nascimento = entrada.nextInt();
         System.out.print("Em que ano estamos: ");
-        ano = ex.nextInt();
+        ano = entrada.nextInt();
 
         idade = ano - nascimento;
         meses = idade * 12;
@@ -22,6 +20,6 @@ public class Ex14 {
         System.out.println("Você tem "+ dias + " dias");
         System.out.println("Você tem "+ semanas + " semanas");
 
-        ex.close();
+        entrada.close();
     }
 }

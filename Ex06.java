@@ -1,22 +1,22 @@
 import java.util.Scanner;
-
 public class Ex06 {
     public static void main(String[] args) {
-        Scanner ex = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
+
+        double salario, vendas, comissao, salarioFinal;
 
         System.out.println("Insira o salário fixo: ");
-        double salario = ex.nextDouble();
-
+        salario = entrada.nextDouble();
         System.out.println("Insira o valor das vendas: ");
-        double vendas = ex.nextDouble();
+        vendas = entrada.nextDouble();
 
-        double comissao = vendas * 4/100;
+        comissao = vendas * 4/100;
 
-        double salariofinal = salario + comissao;
+        salarioFinal = salario + comissao;
 
         System.out.println("Comissão: "+ comissao);
-        System.out.println("Salário final: "+ salariofinal);
+        System.out.println("Salário final: "+ salarioFinal);
 
-        ex.close();
+        entrada.close();
     }
 }

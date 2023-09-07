@@ -1,28 +1,28 @@
 import java.util.Scanner;
-
 public class Ex21 {
     public static void main(String[] args) {
-        Scanner ex = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
+
+        int horasTrabalhadas, horasExtras;
+        double salarioMinimo, valorHoraTrabalhada, valorHoraExtra, salarioBruto, quantiaHorasExtras, salarioReceber;
 
         System.out.print("Digite o número de horas trabalhadas: ");
-        int horasTrabalhadas = ex.nextInt();
-
+        horasTrabalhadas = entrada.nextInt();
         System.out.print("Digite o valor do salário mínimo: ");
-        double salarioMinimo = ex.nextDouble();
-
+        salarioMinimo = entrada.nextDouble();
         System.out.print("Digite o número de horas extras trabalhadas: ");
-        int horasExtras = ex.nextInt();
+        horasExtras = entrada.nextInt();
 
-        double valorHoraTrabalhada = salarioMinimo / 8;
-        double valorHoraExtra = salarioMinimo / 4;
+        valorHoraTrabalhada = salarioMinimo / 8;
+        valorHoraExtra = salarioMinimo / 4;
 
-        double salarioBruto = horasTrabalhadas * valorHoraTrabalhada;
-        double quantiaHorasExtras = horasExtras * valorHoraExtra;
-        double salarioReceber = salarioBruto + quantiaHorasExtras;
+        salarioBruto = horasTrabalhadas * valorHoraTrabalhada;
+        quantiaHorasExtras = horasExtras * valorHoraExtra;
+        salarioReceber = salarioBruto + quantiaHorasExtras;
 
         System.out.println("O salário a receber é: " + salarioReceber);
 
-        ex.close();
+        entrada.close();
     }
 }
 

@@ -1,17 +1,18 @@
 import java.util.Scanner;
 public class Ex12 {
     public static void main(String[] args) {
-        Scanner ex = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
+
+        double salario, minimo, calculo;
 
         System.out.print("Insira o salário: ");
-        double salario = ex.nextDouble();
+        salario = entrada.nextDouble();
 
-        double minimo = 1.320;
-
-        double calculo = salario / minimo; 
+        minimo = 1.320;
+        calculo = salario / minimo;
 
         System.out.print("Você recebe o equivalente a "+ calculo + " salários mínimos.");
 
-        ex.close();
+        entrada.close();
     }
 }

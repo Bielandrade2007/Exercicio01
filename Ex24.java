@@ -1,25 +1,26 @@
 import java.util.Scanner;
-
 public class Ex24 {
     public static void main(String[] args) {
-        Scanner ex = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
+
+        double dinheiroReais, cotacaoDolar,cotacaoMarcoAlemao,cotacaoLibraEsterlina, dolares, marco, libra;
 
         System.out.print("Digite a quantidade de dinheiro em reais: ");
-        double dinheiroReais = ex.nextDouble();
+        dinheiroReais = entrada.nextDouble();
 
-        double cotacaoDolar = 1.80;
-        double cotacaoMarcoAlemao = 2.00;
-        double cotacaoLibraEsterlina = 3.57;
+        cotacaoDolar = 1.80;
+        cotacaoMarcoAlemao = 2.00;
+        cotacaoLibraEsterlina = 3.57;
 
-        double dinheiroDolares = dinheiroReais / cotacaoDolar;
-        double dinheiroMarcoAlemao = dinheiroReais / cotacaoMarcoAlemao;
-        double dinheiroLibraEsterlina = dinheiroReais / cotacaoLibraEsterlina;
+        dolares = dinheiroReais / cotacaoDolar;
+        marco = dinheiroReais / cotacaoMarcoAlemao;
+        libra = dinheiroReais / cotacaoLibraEsterlina;
 
-        System.out.println("Valor em dólares: " + dinheiroDolares);
-        System.out.println("Valor em marco alemão: " + dinheiroMarcoAlemao);
-        System.out.println("Valor em libra esterlina: " + dinheiroLibraEsterlina);
+        System.out.println("Valor em dólares: " + dolares);
+        System.out.println("Valor em marco alemão: " + marco);
+        System.out.println("Valor em libra esterlina: " + libra);
 
-        ex.close();
+        entrada.close();
     }
 }
 

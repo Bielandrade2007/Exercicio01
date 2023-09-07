@@ -1,16 +1,17 @@
 import java.util.Scanner;
-
 public class Ex08 {
     public static void main(String[] args) {
-        Scanner ex = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
+
+        double peso, gramas;
 
         System.out.println("Insira o peso(em kg): ");
-        double peso = ex.nextDouble();
+        peso = entrada.nextDouble();
 
-        double gramas = peso * 1000;
+        gramas = peso * 1000;
 
         System.out.println("O peso em gramas é: "+ gramas);
 
-        ex.close();
+        entrada.close();
     }
 }
